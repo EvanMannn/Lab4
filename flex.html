@@ -19,21 +19,7 @@ Description : Flex Layouts.
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
-		div {
-			border: 1px dashed gray;	
-		}
-		.row{ 
-			border: 1px solid red;			
-		}
-		.large {
-			border: 1px solid blue;	
-		}
-		.medium {
-			border: 1px solid green;	
-		}
-		.small {
-			border: 1px solid yellow;	
-		}		
+	
 	</style>
 
 	<style>
@@ -69,19 +55,30 @@ Description : Flex Layouts.
         img { max-width: 100%; height: auto; }
         .container { 
 			/*I need some CSS codes.*/
+
+
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
 			/*I need some CSS codes.*/
+			display: flex;
 		}
         .main { 
+			display: flex;
+			flex-wrap: wrap;
+
 			padding: 15px; 
+
 			/*I need some CSS codes.*/
 		}
         
         .news-item { padding: 10px; }
         .row { 
 			/*I need some CSS codes.*/
+			display: flex;
+
+
+			
 		}
         
 
@@ -89,29 +86,50 @@ Description : Flex Layouts.
             .menu { width: 150px; }     
 			.large { 
 				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+				width: 70%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
+				width: 30%;
 			 }       
         }
 
         @media screen and (max-width: 768px) {
 			.body { 
 				/*I need some CSS codes.*/
+				display: inline;
 			}
             .menu ul { 
 				/*I need some CSS codes.*/
-			 }            
+				display: flex;
+				flex-wrap: nowrap;
+				flex-direction: row;
+			 }
+			 
             /*I need some CSS codes.*/
+			.large { 
+				/*I need some CSS codes.*/
+				width: 100%;
+			}
+			.medium { 
+				/*I need some CSS codes.*/
+				width: 60%;
+			}
+			.small { 
+				/*I need some CSS codes.*/
+				width: 40%;
+			 }   
         }
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
             .medium, .small { 
 				/*I need some CSS codes.*/
+				width: 100%;
 			 }
         }
     </style>
