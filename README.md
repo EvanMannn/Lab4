@@ -1,2 +1,16 @@
-# Lab4
-ENSF 381 Lab 4 Repository
+# Project Overview
+
+## Team Members
+
+| Name |
+|--------|
+| Evan Mann |
+| Matthew McDougall |
+
+
+## Screenshots
+
+### Exercise B
+![Exercise B final output](./ExerciseB.gif)
+### Exercise C
+![Exercise C final output](./ExerciseC.gif)
