@@ -1,10 +1,10 @@
 <!--
 =========================================================
-Name        : index.html
-Assignment  : Lab 4 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
-Description : Flex Layouts.
+Name        : responsive.html
+Assignment  : Lab 4 Exercise B
+Author(s)   : Evan Mann, Matthew McDougall
+Submission  : February 7, 2024
+Description : Responsive Layouts.
 =========================================================
 -->
 <!DOCTYPE html>
@@ -55,7 +55,8 @@ Description : Flex Layouts.
         img { max-width: 100%; height: auto; }
         .container { 
 			/*I need some CSS codes.*/
-
+			display: flex;
+			flex-direction: column;
 
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
@@ -64,11 +65,8 @@ Description : Flex Layouts.
 			display: flex;
 		}
         .main { 
-			display: flex;
-			flex-wrap: wrap;
-
 			padding: 15px; 
-
+			width: 100%;
 			/*I need some CSS codes.*/
 		}
         
@@ -76,9 +74,7 @@ Description : Flex Layouts.
         .row { 
 			/*I need some CSS codes.*/
 			display: flex;
-
-
-			
+			flex-wrap: wrap;
 		}
         
 
@@ -106,7 +102,6 @@ Description : Flex Layouts.
             .menu ul { 
 				/*I need some CSS codes.*/
 				display: flex;
-				flex-wrap: nowrap;
 				flex-direction: row;
 			 }
 			 
@@ -130,6 +125,7 @@ Description : Flex Layouts.
             .medium, .small { 
 				/*I need some CSS codes.*/
 				width: 100%;
+				
 			 }
         }
     </style>
